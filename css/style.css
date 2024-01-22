@@ -436,17 +436,6 @@ button {
     margin-bottom: .5rem;
 }
 
-.newprices {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: .5rem;
-}
-
-.newprice {
-    font-weight: 500;
-    color: #fff;
-}
-
 .newdiscount {
     color: #3678ff;
     font-size: .75rem;
