@@ -26,7 +26,7 @@ function linkAction() {
 
 navLink.forEach(n =>  n.addEventListener('click', linkAction))
 
-/*swiper nuevos slider */
+/*swiper slider */
 
 let newSwiper = new Swiper (".new-swiper", {
     centeredSlides: true,
