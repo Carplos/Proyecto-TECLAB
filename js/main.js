@@ -33,6 +33,10 @@ let newSwiper = new Swiper (".new-swiper", {
     slidesPerView: "auto",
     loop: 'true',
     spaceBetween: 16,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Permite hacer clic en los puntos para navegar a la diapositiva correspondiente
+    },
 })
 
 
@@ -87,7 +91,36 @@ const sr = ScrollReveal({
     delay: 300
 })
 
-sr.reveal(`.home-swiper, .new-swiper, .newslc`)
+sr.reveal(`.home-swiper, .new-swiper, .newslc, .formContact`)
 sr.reveal(`.categorydata, .footercontent`, {interval: 100})
 sr.reveal(`.aboutdata, .discountimg`, {origin: 'left'})
 sr.reveal(`.aboutimg, .discountdata`, {origin: 'left'})
+
+/*FORM FUNCTIONALITY*/
+
+const $form = document.querySelector('#form')
+
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    try {
+        const response = await fetch(this.action, {
+            method: this.method,
+            body: form,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+
+        if (response.ok) {
+            this.reset()
+            alert('MESSAGE SENT! THANK YOU FOR CONTACTING US, YOU WILL RECEIVE A RESPONSE SOON')
+        } else {
+            console.error('Failed to send message. Server returned status:', response.status);
+        }
+    } catch (error) {
+        console.error('An error occurred while sending the message:', error);
+    }
+}

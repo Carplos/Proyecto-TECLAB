@@ -52,6 +52,22 @@
         </nav>
     </header>
 
+    <!--FORM-->
+    <main>
+        <div class="formContact">
+            <h2>How can we help?</h2>
+            <form id="form" class="form" action="https://formspree.io/f/mnqyylrd" method="POST">
+                <label for="name">Name<span>*</span></label>
+                <input name="name" required type="text" id="name" placeholder="Charles Hoskinson">
+                <label for="email">Address Mail <span>*</span></label>
+                <input name="email" type="text" id="email" required placeholder="Anounymous@mail.com">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
+    </main>
+
     <!--FOOTER-->
     <footer class="footer section">
         <div class="footercontainer container grid">

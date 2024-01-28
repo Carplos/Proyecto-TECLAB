@@ -118,6 +118,50 @@ button {
   cursor: pointer;
 }
 
+/*form contact us*/
+.formContact h2 {
+    text-align: center;
+    line-height: normal;
+    font-size: 35px;
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.form {
+    max-inline-size: 35rem;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: .5rem;
+    padding-inline-start: .5rem;
+}
+
+.form label span {
+    color: #DA1414;
+}
+
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
 @media (max-width: 767px) {
   .navM {
     position: fixed;
@@ -263,7 +307,7 @@ button {
 }
 
 
-/*CATEGORIA*/
+/*SERVICES*/
 .categorycontainer {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem 2rem;
@@ -289,7 +333,7 @@ button {
 }
 
 
-/*ABOUT*/
+/*PROTOCOL G*/
 .aboutcontainer {
     row-gap: 2rem;
 }
@@ -307,7 +351,7 @@ button {
 }
 
 
-/*DESCUENTO*/
+/*WHITE PAPER*/
 .discountcontainer {
     background: #000c32;
     border-radius: 1rem;
@@ -329,7 +373,7 @@ button {
     justify-self: center;
 }
 
-/*NEW*/
+/*COMMUNITY*/
 .newcontainer {
     padding-top: 1rem;
 }
@@ -398,6 +442,11 @@ button {
 
 .newcontent:hover .newbutton {
     right: 0;
+}
+
+/*FORM CONTACT US*/
+.formContact {
+    margin: 2rem;
 }
 
 /*FOOTER*/
