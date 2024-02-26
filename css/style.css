@@ -162,6 +162,17 @@ input::-webkit-input-placeholder {
     color: #0F0A0A88;
 }
 
+/*Roadmap*/
+.roadmap-img{
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+    width: 70rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
 @media (max-width: 767px) {
   .navM {
     position: fixed;
@@ -173,6 +184,10 @@ input::-webkit-input-placeholder {
     transition: 0.4s;
     z-index: 100;
     border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .formContact h2{
+    margin-top: 2rem;
   }
 }
 

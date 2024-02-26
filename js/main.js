@@ -91,7 +91,7 @@ const sr = ScrollReveal({
     delay: 300
 })
 
-sr.reveal(`.home-swiper, .new-swiper, .newslc, .formContact`)
+sr.reveal(`.home-swiper, .new-swiper, .newslc, .formContact, .roadmap-img`)
 sr.reveal(`.categorydata, .footercontent`, {interval: 100})
 sr.reveal(`.aboutdata, .discountimg`, {origin: 'left'})
 sr.reveal(`.aboutimg, .discountdata`, {origin: 'left'})
