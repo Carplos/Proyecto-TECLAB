@@ -202,6 +202,20 @@ input::-webkit-input-placeholder {
     text-align: justify;
 }
 
+/*Testnet*/
+
+.testnet {
+    text-align: center;
+    line-height: normal;
+    font-size: 35px;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 767px) {
     .navM {
         position: fixed;
@@ -224,6 +238,10 @@ input::-webkit-input-placeholder {
     }
 
     .disclaimer h2 {
+        margin-top: 2rem;
+    }
+
+    .testnet {
         margin-top: 2rem;
     }
 }
