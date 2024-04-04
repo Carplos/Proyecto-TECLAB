@@ -31,7 +31,7 @@ navLink.forEach(n =>  n.addEventListener('click', linkAction))
 let newSwiper = new Swiper (".new-swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: 'true',
+    loop: `true`,
     spaceBetween: 16,
     pagination: {
         el: '.swiper-pagination',
